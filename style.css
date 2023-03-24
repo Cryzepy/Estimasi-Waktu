@@ -1,0 +1,82 @@
+@font-face{
+    font-family: 'Poppins-Medium';
+    src: url('Poppins-Medium.woff');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    font-family: 'Poppins-Medium';
+    background: darkslateblue;
+    min-height: 100vh;
+}
+header{
+    font-size: 1.5rem;
+    color: #5b7fff;
+    font-weight: bold;
+    text-align: center;
+    margin: 6vh 0 8vh;
+    color: white;
+    text-shadow: 2px 3px 3px rgba(0,0,0,.3);
+}
+.container{
+    max-width: 400px;
+    width: 82vw;
+    margin: auto;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1.2rem;
+    border-radius: 7px;
+    gap: 1.2rem;
+    box-shadow: -2px 2px 5px rgba(0,0,0,.3);
+}
+.container > form{
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    font-size: 1.7rem;
+    gap: 10px;
+}
+.container > form > input{
+    max-width: 52px;
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 7px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: darkslateblue;
+    color: #fff;
+    transition: transform .3s;
+    font-family: inherit;
+    box-shadow: -2px 2px 5px rgba(0,0,0,.3);
+}
+.container > form > input[type=number]:focus{
+    transform: translateY(-6px);
+}
+.container > form > input::placeholder{
+    color: rgba(255,255,255,.2);
+}
+.button{
+    background-color: darkslateblue;
+    color: white;
+    font-size: 1rem;
+    box-shadow: -2px 2px 2px gray;
+    border: none;
+    border-radius: 6px;
+    padding: .4rem;
+    font-family: inherit;
+}
+.container > p{
+    font-size: .7rem;
+    color: darkslateblue;
+    text-align: center;
+}
+p.display{
+    font-style: italic;
+}
